@@ -28,9 +28,9 @@ h2{
 
     background-color: rgba(0, 0, 0, 0.425);
     color: #fff;
-    border-bottom-left-radius: 31px;
-    border-bottom-right-radius: 31px;
-    box-shadow: rgba(0, 0, 0, 0.712) 16px 20px 50px 16px
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: rgba(0, 0, 0, 0.616) 8px 20px 40px 8px
 }
 
 .user-section{
