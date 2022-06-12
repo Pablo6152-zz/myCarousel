@@ -20,17 +20,28 @@ h2{
     margin: 0;
 }
 .site-title{
-    height: 10%;
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.425);
     color: #fff;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: rgba(0, 0, 0, 0.616) 8px 20px 40px 8px
+}
+@media (orientation: landscape){
+    .site-title{
+        max-width: 50%;
+    }
+    .nav-bar{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .user-section{
@@ -38,7 +49,7 @@ h2{
     justify-content: center;
     align-items: center;
     height: 90%;
-
+    padding-top: 1em;
 }
 
 .carousel{
@@ -46,7 +57,7 @@ h2{
 }
 .carousel{
     max-height: 80%;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 @media (orientation: landscape){

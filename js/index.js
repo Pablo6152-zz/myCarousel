@@ -10,9 +10,7 @@ function hideCurrentSlide(){
         slide.classList.add("carousel-item-hidden")
         slide.classList.remove("carousel-item-shown")
     }
-    
 }
-
 function prevSlide(){
     hideCurrentSlide()
 
@@ -25,7 +23,6 @@ function prevSlide(){
     slides[currentSlide].classList.add("carousel-item-shown")
     slides[currentSlide].classList.remove("carousel-item-hidden")
 }
-
 function nextSlide(){
     hideCurrentSlide()
 
