@@ -8,25 +8,67 @@ body{
     height: 100%;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Montserrat', sans-serif;
     background: rgb(239,50,217);
     background: linear-gradient(61deg, rgba(239,50,217,1) 0%, rgba(63,116,219,1) 100%);
 
     margin: 0;
 }
-.carousel{
-    position: relative;
-    max-height: 40%;
-    max-width: 40%;
+p,
+h1,
+h2{
+    margin: 0;
 }
+.site-title{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.425);
+    color: #fff;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px
+}
+
+.user-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+}
+
+.carousel{
+    
+    position: relative;
+}
+.carousel{
+    max-height: 80%;
+    max-width: 80%;
+}
+@media (orientation: landscape){
+    .carousel{
+        max-height: 40%;
+        max-width: 40%;
+    }
+}
+
+
+.carousel,
+.carousel-btns{
+    transform: translateY(-50%)
+}
+
 .carousel-btns{
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 #btn-slide-prev{
     margin-left: 1em;

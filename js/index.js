@@ -33,7 +33,6 @@ function nextSlide(){
         currentSlide = 0
     } else {
         currentSlide++
-        console.log(currentSlide)
     }
 
     slides[currentSlide].classList.add("carousel-item-shown")
