@@ -42,7 +42,6 @@ h2{
 }
 
 .carousel{
-    
     position: relative;
 }
 .carousel{
@@ -82,6 +81,7 @@ h2{
 }
 .carousel-item-shown{
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 .carousel-item > img{
@@ -89,7 +89,8 @@ h2{
     max-width: 100%;
     height: auto;
     border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px;
+    
 }
 
 .btn{
@@ -103,3 +104,11 @@ h2{
 }
 
 
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
