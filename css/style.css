@@ -30,7 +30,7 @@ h2{
     color: #fff;
     border-bottom-left-radius: 31px;
     border-bottom-right-radius: 31px;
-    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px
+    box-shadow: rgba(0, 0, 0, 0.637) 8px 8px 16px 8px
 }
 
 .user-section{
@@ -48,6 +48,7 @@ h2{
     max-height: 80%;
     max-width: 80%;
 }
+
 @media (orientation: landscape){
     .carousel{
         max-height: 40%;
@@ -71,9 +72,11 @@ h2{
 }
 #btn-slide-prev{
     margin-left: 1em;
+
 }
 #btn-slide-next{
     margin-right: 1em;
+    
 }
 
 .carousel-item-hidden{
@@ -81,7 +84,7 @@ h2{
 }
 .carousel-item-shown{
     display: block;
-    animation: fadeVisibility 0.5s;
+    animation: fadeVisibility 0.3s;
 }
 
 .carousel-item > img{
@@ -94,13 +97,15 @@ h2{
 }
 
 .btn{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50px;
-    border: #000 1px solid;
+    border: #fff 1px solid;
     outline: none;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.425);
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px; 
 }
 
 
