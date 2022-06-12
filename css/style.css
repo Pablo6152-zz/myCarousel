@@ -84,7 +84,7 @@ h2{
 }
 .carousel-item-shown{
     display: block;
-    animation: fadeVisibility 0.3s;
+    animation: fadeVisibility 0.4s;
 }
 
 .carousel-item > img{
