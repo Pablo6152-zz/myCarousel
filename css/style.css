@@ -68,55 +68,69 @@ h2{
 }
 
 
-.carousel,
-.carousel-btns{
-    transform: translateY(-50%)
-}
+
 
 .carousel-btns{
+    display: flex;
     position: absolute;
     top: 50%;
+    left: 50%;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    transform: translate(-50%, -50%);
     
 }
-#btn-slide-prev{
-    margin-left: 1em;
+.arrow-btn{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.616);
+    border: 1px #fff solid;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-pane{
+    /* background-color: rgba(0, 0, 0, 0.384); */
+    display: flex;
+    align-items: center;
+    animation: hideBtn 3s;
+}
+.slide-prev-pane{
+    width: 50%;
+    padding-left: 1em;
+}
+.slide-next-pane{
+    width: 50%;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
 
+/* #btn-slide-prev{
+    margin-left: 1em;
 }
 #btn-slide-next{
     margin-right: 1em;
-    
-}
+} */
 
 .carousel-item-hidden{
     display: none;
 }
 .carousel-item-shown{
     display: block;
+    
+}
+.carousel-item{
+    height: 100%;
     animation: fadeVisibility 0.4s;
 }
-
 .carousel-item > img{
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px;
-    
-}
-
-.btn{
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    border: #fff 1px solid;
-    outline: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.425);
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.733) 0px 16px 48px 0px; 
 }
 
 
@@ -126,5 +140,14 @@ h2{
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes hideBtn {
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

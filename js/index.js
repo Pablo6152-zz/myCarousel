@@ -1,9 +1,17 @@
 const slides = document.getElementsByClassName("carousel-item")
 let currentSlide = 0
 const totalSlides = slides.length
+const btnPrev = document.getElementById("btn-slide-prev")
+const btnNext = document.getElementById("btn-slide-next")
 
-document.getElementById("btn-slide-prev").addEventListener("click", prevSlide)
-document.getElementById("btn-slide-next").addEventListener("click", nextSlide)
+
+btnPrev.addEventListener("click", prevSlide)
+btnNext.addEventListener("click", nextSlide)
+
+function giveVisualFeedback(){
+        setTimeout(() => btnPrev.innerHTML = ``, 2900)
+        setTimeout(() => btnNext.innerHTML = ``, 2900)
+}
 
 function hideCurrentSlide(){
     for (let slide of slides){
@@ -13,13 +21,13 @@ function hideCurrentSlide(){
 }
 function prevSlide(){
     hideCurrentSlide()
-
+    
     if(currentSlide === 0){
         currentSlide = 2
     } else {
         currentSlide--
     }
-
+    
     slides[currentSlide].classList.add("carousel-item-shown")
     slides[currentSlide].classList.remove("carousel-item-hidden")
 }
@@ -33,5 +41,7 @@ function nextSlide(){
     }
 
     slides[currentSlide].classList.add("carousel-item-shown")
-    slides[currentSlide].classList.remove("carousel-item-hidden")  
+    slides[currentSlide].classList.remove("carousel-item-hidden")
 }
+
+giveVisualFeedback()
